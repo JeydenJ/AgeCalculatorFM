@@ -5,33 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
+  <main>
+    <div class="card"> 
+       <form onsubmit=" event.preventDefault(); CalcAge()">
+        <div class="inputs-container">
+          <div class="input-group">
+            <h1>Day</h1>
+              <input id="input-day" maxlength="2" size="2" placeholder="DD"></input>
+            </div>
+            <div class="input-group">
+            <h1>Month</h1>
+              <input id="input-month" maxlength="2" size="2" placeholder="MM"></input>
+            </div>
+            <div class="input-group">
+            <h1>Year</h1>
+              <input id="input-year" maxlength="4" size="4" placeholder="YYYY"></input>
+            </div>
+            <div class="submit-btn">
+              <button type="submit"><img src="assets/images/icon-arrow.svg" alt=""></button>
+              </div>
+            </div>
+       </form> 
+       <ul>
+        <li><span id="years">--</span> years</li>
+        <li><span id="months">--</span> months</li>
+        <li><span id="days">--</span> days</li>
+       </ul>
+    </div>   
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

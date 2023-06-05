@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-grey);
+    min-height: 100vh;
+}
+.card{
+    width: 60rem;
+    max-width: 80%;
+    padding: 30px;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    border-radius: 1rem 1rem 8rem 1rem;
+    background-color: var(--White);
+}
+img{
+    width: 35px;
+}
+button{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: var(--Purple);
+    border: solid transparent;
+    border-radius: 100%;
+    padding: 20px;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+}
+img:hover, button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 3rem;
+}
+.inputs-container {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: thin solid var(--Light-grey);
+    width: calc(100% - 12rem);
+    outline: none;
+}
+h1, input{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+input{
+    font-size: 2rem;
+    width: 8rem;
+    height: 4rem;
+    border: solid var(--Smokey-grey);
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+    padding-left: 2rem; 
+}
+input:focus{
+    outline: none;
+    caret-color: var(--Purple);
+    border-color: var(--Purple);
+}
+ul{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800i;
+    font-size: 3rem;
+}
+li{
+    list-style: none;
+}
+span{
+    color: var(--Purple);
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
