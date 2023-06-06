@@ -16,17 +16,19 @@ body{
     min-height: 100vh;
 }
 .card{
-    width: 60rem;
-    max-width: 80%;
-    padding: 30px;
+    max-width: 60rem;
+    padding: 3rem;
     justify-content: center;
     margin: auto;
     position: relative;
     border-radius: 1rem 1rem 8rem 1rem;
     background-color: var(--White);
 }
+/* form{
+
+} */
 img{
-    width: 35px;
+    max-width: 2rem;
 }
 button{
     display: flex;
@@ -35,13 +37,11 @@ button{
     background-color: var(--Purple);
     border: solid transparent;
     border-radius: 100%;
-    padding: 20px;
-    height: 4rem;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 150px;
-    top: 150px;
+    right: 50px;
+    top: 175px;
 }
 img:hover, button:hover{
     cursor: pointer;
@@ -50,15 +50,14 @@ img:hover, button:hover{
 .input-group {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-bottom: 3rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
 }
 .inputs-container {
     display: flex;
-    margin-bottom: 20px;
+    margin-right: 2rem;
     border-bottom: thin solid var(--Light-grey);
-    width: calc(100% - 12rem);
-    outline: none;
+    min-width: 42rem;
 }
 h1, input{
     font-family: 'Poppins', sans-serif;
@@ -94,7 +93,13 @@ li{
 span{
     color: var(--Purple);
 }
-
+.error{
+    border-color: var(--Light-red);
+}
+.error-message{
+    padding-top: 1rem;
+    color: var(--Light-red);
+}
 
 
 
